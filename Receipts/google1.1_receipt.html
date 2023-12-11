@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+</head>
+<py-script src="main.py"></py-script>
+<style>
+    *{
+    box-sizing: border-box;
+}
+.border-box{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.reciept-container {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2); 
+}
+.signup{
+    color: white;
+    background-color: rgb(134, 247, 134);
+    margin: 7px 4px;
+    padding: 4px 60px 5px 60px;
+}      
+.receipt-header {
+     text-align: left;
+     justify-content: left;
+}
+.receipt-header img {
+     width: 180px;
+     height: 35px;
+     margin-top: -10px;
+     margin-bottom: 0px;
+}
+.receipt-header1 img {
+     width: 170px;
+     height: 30px;
+     margin-top: -10px;
+     margin-bottom: 0px;
+}
+.thankyou{
+     color: rgba(75,75,75,255);
+     text-align: left;
+     font-size: 40px;
+     justify-content: flex;
+     font-family:sans-serif;
+     margin-top: -40px;
+     margin-bottom: -60px;
+}
+.message{
+     color:#525252;
+     text-align: left;
+     position: relative;
+     font-family: sans-serif;
+}
+.receipt-info1 {
+     display: flex;
+     color: #535353;
+     justify-content: space-between;
+     margin-bottom: 20px;
+}
+.receipt-info {
+    color: rgb(60, 49, 49);
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 20px;
+} 
+.receipt-info-item {
+     color: #4c4c4c;
+     font-family: sans-serif;
+}
+.receipt-info-item-order-date {
+     color: #4c4c4c;
+     font-family: sans-serif;
+     margin-top: -15px ;
+}
+.order_number{
+    margin-top: -35px;
+    margin-left: 115px;
+    font-family: sans-serif;
+    color: #4c4c4c;
+}
+.receipt-items {
+     color: rgb(76, 68, 68);
+     margin-bottom: 20px;
+}
+.receipt-item {
+     display: flex;
+     color: rgb(92, 92, 92);
+     margin-bottom: 10px;
+}
+.receipt-item-description {
+     flex-grow: 1;
+     color: #4c4c4c;
+     font-family: sans-serif;
+}
+.receipt-item-description-body2 {
+     flex-grow: 1;
+     color: #6e6d6d;
+     font-family: sans-serif;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+.receipt-total {
+    font-family: sans-serif;
+     text-align: right;
+     color: #6e6d6d;
+     padding-bottom: 10px;
+}
+.receipt-total1 {
+     text-align: right;
+     color: #6e6d6d;
+     margin-top: -35px;
+     margin-left: 0px;
+}
+ .img3{
+ width: 30px;
+ height: 30px;
+ margin-top: -5px;
+ margin-left: 110px;
+}
+.price{
+    margin-top: -20px;
+    margin-left: 270px;
+}
+.visa{
+    color: #525252;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-left: -5px;
+}
+.playpoint{
+    color: #525252;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.line {
+      width: 100%; /* Change the width as needed */
+      height: 1px; /* Set the desired thickness */
+      background-color: rgb(222, 217, 217); /* Set the color of the line */
+    }
+.receipt-header1{
+    font-family: sans-serif;
+    color: #4c4c4c;
+}
+.spent{
+    font-family: sans-serif;
+    color: #4c4c4c;
+}
+.Payment-method{
+    margin-left: 3px;
+}
+.Point{
+    margin-left: 3px;
+}
+.earned{
+    margin-left: 3px;
+}
+</style>
+<body>
+    <div class="border-box">
+        <div class="reciept-container">
+        <div class="receipt-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Google_Play_2022_logo.svg/1024px-Google_Play_2022_logo.svg.png" alt="Google Play Store">
+        </div>
+            <div class="line"></div>
+            <br>
+            <div class="thankyou"><p>Thank you</p></div>
+            <br>
+            <div class="message"><p>You've made a purchase from Supercell<br>on Google Play.</p></div>
+            <br>
+            <div class="receipt-info-item"><b>Order number:</b> <span>GPA.{{order_number}}</p></div><div class="receipt-info-item-order-date"><b>Order date:</b>{{month}} <br>GMT+5:30</div>
+            <br>
+        <div class="receipt-items">
+            <div class="receipt-item">
+                <div class="receipt-item-description"><b>Item</b> <div class="price"><b>Price</b></div></div>
+            </div>
+            <div class="line"></div>
+         <div class="receipt-items">
+            <div class="receipt-item">
+                <div class="receipt-item-description"><div class="receipt-item-description-body2">{{Item_name}} (Clash of <br>Clans)<div class="receipt-total1">{{Item_price}}</div></div></div>
+                
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <div class="receipt-total">
+           <b>Total:</b>{{Item_price}}
+        </div>
+        <div class="receipt-total">
+           (Included GST of total)
+        </div>
+        <div class="line"></div>
+        <div class="receipt-items">
+            <div class="receipt-item">
+                <div class="receipt-item-description"><b>Payment</b><b class="Payment-method">method:</b></div>
+                <div class="visa">Visa-6259</div>
+            </div>
+                <div class="receipt-items">
+                    <div class="receipt-item">
+                        <div class="receipt-item-description"><b>Play</b><b class="Point">Point</b><b class="earned">earned:</b></div>
+                        <img class="img3" src="data:image/png;base64,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" alt="">
+                        <div class="playpoint"> +240</div>
+            </div>
+            <div class="line"></div>
+            <div class="receipt-month">
+                <div class="spent">
+                    <b>Total spents:</b><p>With this purchase, you've spent {{Item_price}} of your Monthly limit budget. You can change your budget in the Play Store app. </p>
+                </div>
+                <br>
+                <p style="font-family: sans-serif;" style="color: #4c4c4c;">Questions? Visit<a href="#">Supercell</a> </p>
+                <hr>
+                <div class="receipt-header1">
+                    <p> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Google_Play_2022_logo.svg/1024px-Google_Play_2022_logo.svg.png" alt="Google Play Store"> <br>All your entertainment in one place, avialable anywhere.</p>
+                    <a href="#">Learn more  ></a>
+                </div>
+                <div class="line"></div>
+                <p style="font-family: sans-serif;" style="color: #4c4c4c;">View the Google Play Refund Policy and the <a href="#">Terms of services</a></p>
+            </div>
+       
+    </div>
+</div>
+</body>
+</html>

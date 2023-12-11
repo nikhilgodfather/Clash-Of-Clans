@@ -1,0 +1,11 @@
+python-telegram-bot==13.7
+python-dotenv
+pdfkit
+wkhtmltopdf==0.2
+load_dotenv
+pdfkit
+logging
+jinja2
+beautifulsoup4
+requests
+flask 

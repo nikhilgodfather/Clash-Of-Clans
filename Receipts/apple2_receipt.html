@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Store Purchase Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .receipt {
+            max-width: 800px;
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 100px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .receipt-header{
+            text-align: left;
+            justify-content: left;
+
+        }
+        .receipt-header img {
+            margin: -30px -20px -20px -10px;
+            padding: 0px 0px 30px 10px;
+        }
+        .header{
+            font-size: 40px;
+            margin: -30px -20px -20px 635px;
+            color: #99999a;
+        }
+        
+        .receipt-container{
+            width: 100%;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .body-receipt2{
+            background-color:rgba(245,245,245,255);
+            padding-top: auto;
+            padding-bottom: auto;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: 10px;
+        }
+        .container1{
+            background-color: #f5f5f5;
+            border-bottom: 1px solid hsl(0, 0%, 87%);
+            border: 1px solid white;
+            color: #99999a;
+            justify-content: left;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 30px;
+            padding-right: 40px;
+            margin-top:-15px;
+            margin-left: 0px;  
+                  
+        }
+        .container2{
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            border: 1px solid white;
+            color: #99999a;
+            justify-content: right;
+            margin-top: -160px;
+            margin-left: 265px;
+            padding-top: 80px;
+            padding-left:40px;
+            padding-right: 120px;
+            padding-bottom: 40px;
+        }
+        
+        .container3{
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            border: 1px solid white;
+            color: #99999a;
+            justify-content: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 40px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 20px ;
+        }
+        .container4{
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            border: 1px solid white;
+            color: #99999a;
+            justify-content: left;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 20px;
+            margin-top: -20px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+        .container5{
+            background-color: #f5f5f5;
+            font-size: 12px;
+            border: 1px solid white;
+            color: #99999a;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            padding-right: 57px;
+            margin-top: -85px;
+            margin-left: 125px;
+            margin-bottom: 0px;
+            
+        }
+        .container6{
+            background-color: #f5f5f5;
+            justify-content: left;
+            border: 1px solid white;
+            color: #99999a;
+            justify-content: right;
+            margin-top: -160px;
+            margin-left: 570px;
+            margin-bottom: 20px;
+            padding-top: 60px;
+            padding-right: 0px;
+            padding-left:90px;
+            padding-bottom: 60px;
+        }
+        .container7{
+            color: black;
+            justify-content: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+            padding-right: 20px;
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+        .container8{
+            color: #99999a;
+            justify-content: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 20px;
+            margin-top: -35px;
+            margin-left: 370px;
+        }
+        .container9{
+            color: #99999a;
+            justify-content: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 20px;
+            margin-top: -50px;
+            margin-left: 510px;
+        }
+        .container10{
+            color: #99999a;
+            justify-content: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 80px;
+            margin-top: -45px;
+            margin-left: 680px;
+        }
+        .body-receipt3 img{
+            margin: -10px;
+            width: 65px;
+            height: 65px;
+            border: 2px solid black;
+            border-radius: 15PX;
+        }
+        .coc{
+            margin-top: -40px;
+            margin-left: 80px;
+        }
+        .purchase{
+            color: #858586;
+            margin-top: -40px;
+            margin-left: 370px;
+        }
+        .iphone{
+            color: #858586;
+            margin-top: -35px;
+            margin-left: 510px;
+        }
+        .price{
+            margin-top: -15px;
+            margin-left: 680px;
+        }
+        .Total{
+            color: #858586;
+            margin-top:50px;
+            margin-left:510px;
+        }
+        .space{
+            color:#99999a;
+            margin-top: -20px;
+            margin-left: 630px;
+            padding-right: -30px;
+        }
+        .Total-price{
+            margin-top: -20px;
+            margin-left: 680px;
+        }
+        .TOS{
+            color: #99999a;
+            margin-top: 50px;
+            text-align: center;   
+        }
+        .body-receipt4 img{
+            margin-top: 20px;
+            margin-left: 370px;
+            width: 55px;
+            height: 50px;
+        }
+        .TOS1{
+            margin-top: 30Px;
+            text-align: center;
+        }
+        .copyright{
+            color: #99999a;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .copyright1{
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <div class="header">Invoice</div>
+        <div class="receipt-header"> 
+            <img src="data:image/png;base64,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" alt="" width="50px" height="50px"> 
+        </div>
+        <div>
+            <div>
+                <div class="container1" style="width: 30%;">Thank you for buying</div>
+                
+                <div class="container3" style="width: 30%;">INVOICE DATE <br><b><div style="color: black;">{{month}}</div></b></div>
+                <div class="container4" style="width: 13%;">ORDER ID <br> <div style="color: #5129ed;"><u>{{order_number}}</u></div></div>
+                <div class="container5" style="width: 12%;">DOCUMENT No.<br><div style="color: black;">175116838085</div></div>
+                <div class="container2" style="width: 20%;">BILLED TO <br><div style="color: black;">Apple Store</div></div>
+                <div class="container6" style="width: 12%;">TOTAL <br><div style="color: black;"><b>₹{{Item_price}}</b></div></div>
+            </div>
+            <div class="body-receipt2">
+                <div class="container7" style="width: 13%;"> <b>App Store</b> </div>
+                <div class="container8" style="width: 13%;">TYPE</div>
+                <div class="container9" style="width: 13%;">PURCHASED <br>FROM</div>
+                <div class="container10" style="width: 13%;">PRICE</div>
+            </div>
+            <div class="body-receipt3">
+                <img src="data:image/jpeg;base64,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" alt="LOGO-IMAGE">
+                <div class="coc"><b>Clash of clans, {{Item_name}}</b><br><a href="#"><u>Report Problems</u></a></div>
+                <div class="purchase">Purchase In- <br>App</div>
+                <div class="iphone">iPHONE</div>
+                <div class="price"><b>₹{{Item_price}}</b></div>
+            </div>
+            <div class="body-receipt4">
+                <div class="Total"><b>TOTAL</b></div>
+                <div class="space">:</div>
+                <div class="Total-price"><b>₹{{Item_price}}</b></div>
+                <div class="TOS">If you did not authorize the purchase, please visit <a href="#"><u>iTune Payment Cancellation</u></a></div>
+                <img src="data:image/png;base64,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" alt="apple-logo">
+                <div class="TOS1"><a href="#"><u>Apple ID Summary</u></a> <a href="#"><u>Purchase History</u></a> <a href="#"><u>Terms of Sale</u></a> <a href="#"><u>Privacy Policy</u></a></div>
+                <div class="copyright">Copyright © 2017 iTune</div>
+                <div class="copyright1"><a href="#">All rights reserved</a></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
