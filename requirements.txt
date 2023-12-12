@@ -9,6 +9,3 @@ jinja2
 beautifulsoup4
 requests
 flask 
-# Python dependencies
-requests==2.26.0
-# Note: This project requires Node.js and npm to be installed separately.
