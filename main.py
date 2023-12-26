@@ -33,7 +33,7 @@ Suggestion_reply = {}
 proxy_url = 'http://vmzyukac:hxdsqnwzmv2w@45.94.47.66:8110'
 app = Flask(__name__)
 lock_file_path = '/user_input/lock_file.txt'
-
+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
 def acquire_lock():
     try:
         # Create the lock file
@@ -335,7 +335,7 @@ def data_google(update: Update, context: CallbackContext) -> None:
                       modified_html = html_content.replace('{{Item_price}}', Item_price1)
                     with open('user_input/user_inputs3.html', 'w') as file:
                         file.write(modified_html)
-                    pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf')
+                    pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf', configuration=config)
                     context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                     print("pdf sended!")
                     update.message.reply_text('❎If File is still not download then tap to /download ❎')   
@@ -360,7 +360,7 @@ def data_google(update: Update, context: CallbackContext) -> None:
                       modified_html = html_content.replace('{{Item_price}}', Item_price)
                     with open('user_input/user_inputs3.html', 'w') as file:
                         file.write(modified_html)
-                    pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf')
+                    pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf', configuration=config)
                     context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                     print("pdf sended!")
                     update.message.reply_text('❎If File is still not download then tap to /download ❎')
@@ -428,7 +428,7 @@ def data_apple1(update: Update, context: CallbackContext) -> None:
                           modified_html = html_content.replace('{{Item_price}}', Item_price1)
                         with open('user_input/user_inputs3.html', 'w') as file:
                             file.write(modified_html)
-                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf')
+                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf', configuration=config)
                         context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                         print("pdf sended!")
                         update.message.reply_text('❎If File is still not download then tap to /download ❎')   
@@ -453,7 +453,7 @@ def data_apple1(update: Update, context: CallbackContext) -> None:
                           modified_html = html_content.replace('{{Item_price}}', Item_price)
                         with open('user_input/user_inputs3.html', 'w') as file:
                             file.write(modified_html)
-                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf')
+                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf', configuration=config)
                         context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                         print("pdf sended!")
                         update.message.reply_text('❎If File is still not download then tap to /download ❎')
@@ -511,7 +511,7 @@ def data_apple2(update: Update, context: CallbackContext) -> None:
                           modified_html = html_content.replace('{{Item_price}}', Item_price1)
                         with open('user_input/user_inputs3.html', 'w') as file:
                             file.write(modified_html)
-                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf')
+                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf', configuration=config)
                         context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                         print("pdf sended!")
                         update.message.reply_text('❎If File is still not download then tap to /download ❎')   
@@ -536,7 +536,7 @@ def data_apple2(update: Update, context: CallbackContext) -> None:
                           modified_html = html_content.replace('{{Item_price}}', Item_price)
                         with open('user_input/user_inputs3.html', 'w') as file:
                             file.write(modified_html)
-                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf')
+                        pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf', configuration=config)
                         context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                         print("pdf sended!")
                         update.message.reply_text('❎If File is still not download then tap to /download ❎')
