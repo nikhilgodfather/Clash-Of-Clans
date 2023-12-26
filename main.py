@@ -33,7 +33,7 @@ Suggestion_reply = {}
 proxy_url = 'http://vmzyukac:hxdsqnwzmv2w@45.94.47.66:8110'
 app = Flask(__name__)
 lock_file_path = '/user_input/lock_file.txt'
-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
+config=pdfkit.configuration(wkhtmltopdf=r'wkhtmltopdf/bin/wkhtmltoimage.exe')
 def acquire_lock():
     try:
         # Create the lock file
