@@ -5,7 +5,6 @@ wkhtmltopdf==0.2
 load_dotenv
 pdfkit
 logging
-jinja2
-beautifulsoup4
+BeautifulSoup4
 requests
 flask 
