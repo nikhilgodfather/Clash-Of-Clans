@@ -54,3 +54,8 @@ This project is a Telegram bot for managing Clash of Clans-related tasks, provid
 1. Clone the repository:
    ```bash
    git clone https://github.com/nikhilgodfather/Clash-Of-Clans.git
+
+## Previews
+
+'![Bot Screenshot](https://github.com/nikhilgodfather/Clash-Of-Clans/Preview/Screenshot (113).png)
+
