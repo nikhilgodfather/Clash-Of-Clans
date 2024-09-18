@@ -57,5 +57,5 @@ This project is a Telegram bot for managing Clash of Clans-related tasks, provid
 
 ## Previews
 
-'![Bot Screenshot](https://github.com/nikhilgodfather/Clash-Of-Clans/Preview/Screenshot1.png)
+'![Bot Screenshot](https://github.com/nikhilgodfather/Clash-Of-Clans/blob/main/Preview/Screenshot1.png))
 
