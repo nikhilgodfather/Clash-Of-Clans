@@ -16,4 +16,3 @@ This project is a Clash of Clans related tool that helps users interact with gam
 
   ```bash
   pip install -r requirements.txt
-```
