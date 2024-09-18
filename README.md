@@ -1,18 +1,56 @@
-# Clash of Clans Project
+# Clash of Clans Telegram Bot
 
-This project is a Clash of Clans related tool that helps users interact with game data. It features a script that processes inputs and outputs related to the game's data.
+This project is a Telegram bot for managing Clash of Clans-related tasks, providing several commands to interact with game data and user authentication.
 
 ## Features
 
-- Python-based script to handle game data
-- Supports custom user inputs
-- Ability to bypass certain operations (more details in `Bypass.doc`)
-- Detailed usage instructions in `Guide.doc`
+- Handles receipts (Google, Apple, and custom receipts)
+- Manages user authentication and password handling
+- Bug reporting and suggestions system
+- Device generation and management commands
+- Customizable replies for suggestions and bug reports
 
-## Prerequisites
+## Commands
 
-- Python 3.x
-- Install dependencies with:
+### Core Commands:
+- `/start` - Start the bot
+- `/help` - List available commands
+- `/Guide` - User guide
+- `/Tag` - Retrieve user tags
 
-  ```bash
-  pip install -r requirements.txt
+### Receipt Management:
+- `/receipt` - Handle receipts
+- `/Bypass_receipt` - Bypass certain receipt operations
+- `/Generate_receipt` - Generate new receipts
+- `/Google_receipt` - Manage Google receipts
+- `/Apple_receipt` - Manage Apple receipts
+
+### Data and Device Management:
+- `/data_google` - Fetch Google-related data
+- `/data_apple` - Fetch Apple-related data
+- `/device` - Get device information
+- `/generate_devices` - Generate new devices
+
+### User Authentication:
+- `/add_password` - Add a password
+- `/delete_password` - Delete a password
+- `/valid_passwords` - List valid passwords
+- `/user_auth_status` - Check user authentication status
+- `/user_auth_status_delete` - Delete user authentication status
+
+### Bug Reports & Suggestions:
+- `/Report_bug` - Report a bug
+- `/Report_bug_check` - Check reported bugs
+- `/Report_bug_delete` - Delete a bug report
+- `/Suggestion` - Submit a suggestion
+- `/Suggestion_check` - Check suggestions
+- `/Suggestion_reply` - Reply to a suggestion
+
+### Admin Commands:
+- `/help_owner` - Owner-specific help commands
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nikhilgodfather/Clash-Of-Clans.git
